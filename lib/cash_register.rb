@@ -15,6 +15,7 @@ class CashRegister
       while quantity > 1
         @items << title
         i -= 1
+      end
     end
   end
   
