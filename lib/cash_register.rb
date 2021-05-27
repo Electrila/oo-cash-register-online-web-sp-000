@@ -15,6 +15,7 @@ class CashRegister
         @items << title
         quantity -= 1
       end
+    @transaction << price * quantity
   end
   
   def apply_discount
@@ -32,7 +33,6 @@ class CashRegister
   
   def void_last_transaction
     @transaction.pop
-    @items.pop
   end
   
   
