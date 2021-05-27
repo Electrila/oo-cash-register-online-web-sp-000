@@ -15,7 +15,7 @@ class CashRegister
         @items << title
         quantity -= 1
       end
-    @transaction << price * quantity
+    @transaction << price
   end
   
   def apply_discount
